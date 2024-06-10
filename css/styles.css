@@ -1,0 +1,128 @@
+.theme-dark {
+    background-color: black;
+    color: white;
+}
+.theme-blue {
+    background-color: rgb(5, 17, 31, 255);
+    color: rgb(51, 124, 214, 255);
+}
+.nav {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav-left,
+.nav-right {
+    display: inline-block; /* Ensure both are on the same line */
+    vertical-align: middle; /* Align vertically */
+    padding-right: 15%;
+    padding-left: 15%;
+    justify-content: space-between;
+    display: flex;
+    column-gap: 20px;
+    cursor: pointer;
+}
+
+.nav-space {
+    padding: 10px;
+}
+
+.nav-item {
+    display:inline-block;
+    padding-bottom: 1px;
+}
+
+.nav-item::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.logo-top{
+    height: 128px;
+}
+
+.soc-media{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.soc-media button {
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+}
+
+/* CSS */
+.button-round {
+  background: rgb(22, 66, 119, 255);
+  border: 0;
+  border-radius: 30px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  padding: 20px 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.button-round img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    margin-right: auto;
+}
+.button-round span{
+    margin-right: auto;
+}
+
+.button-round:active,
+.button-round:hover {
+  outline: 0;
+}
+
+.button-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pending {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.pending h1,
+.pending h3{
+    margin: 0px;
+}
+
+main {
+    padding-top: 125px;
+}
